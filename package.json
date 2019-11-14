@@ -2,9 +2,10 @@
   "name": "typescript-template",
   "version": "0.0.1",
   "description": "My personal typescript project template",
-  "main": "lib/index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "ava",
+    "build": "tsc -p tsconfig.release.json",
     "lint": "eslint src/**/*.ts"
   },
   "ava": {
@@ -13,7 +14,9 @@
       "ts"
     ],
     "require": [
-      "ts-node/register"
+      "ts-node/register",
+      "tsconfig-paths/register",
+      "./src/test/register.ts"
     ],
     "tap": true,
     "verbose": true
@@ -21,18 +24,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.6.3"
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
-    "@types/axios": "^0.14.0",
-    "@typescript-eslint/eslint-plugin": "^2.3.3",
-    "@typescript-eslint/parser": "^2.3.3",
-    "ava": "^2.3.0",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "ava": "^2.4.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1",
+    "tsconfig-paths": "^3.9.0"
   }
 }

@@ -4,7 +4,9 @@
     "rootDir": ".",
     "outDir": "build",
     "removeComments": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts", "node_modules"]
