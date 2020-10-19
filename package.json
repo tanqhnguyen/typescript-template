@@ -11,17 +11,6 @@
     "debug": "nodemon --config nodemon.debug.json",
     "start": "forever build/index.js"
   },
-  "ava": {
-    "compileEnhancements": false,
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "tap": true,
-    "verbose": true
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
