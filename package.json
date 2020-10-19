@@ -14,9 +14,7 @@
       "ts"
     ],
     "require": [
-      "ts-node/register",
-      "tsconfig-paths/register",
-      "./src/test/register.ts"
+      "ts-node/register"
     ],
     "tap": true,
     "verbose": true
@@ -34,7 +32,6 @@
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "prettier": "^1.19.1",
-    "tsconfig-paths": "^3.9.0"
+    "prettier": "^1.19.1"
   }
 }
